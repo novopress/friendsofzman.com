@@ -1,0 +1,16 @@
+{{ define "main" }}
+<h1>Articles</h1>
+<p>All articles here were first published by Z Man to <em>thezman.com</em>. Premium (paywalled) articles are not archived at this time, nor are the user comments on his original posts.</p>
+{{ $articles := where .Site.RegularPages "Section" "articles" }}
+{{ range $articles.GroupByDate "January 2006" }}
+<div>
+    <h2>{{ .Key }}</h2>
+    <p>
+        {{ $len := len .Pages }}
+        {{ range $index, $page := .Pages }}
+            <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>{{ if ne (add $index 1) $len }} &nbsp;/&nbsp; {{ end }}
+        {{ end }}
+    </p>
+</div>
+{{ end }}
+{{ end }}

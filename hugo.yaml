@@ -1,30 +1,16 @@
 # Hugo configuration file
 baseUrl: "https://friendsofzman.com/"
 languageCode: "en-us"
-title: Zarchive
-
-# import hextra as module
-module:
-  imports:
-    - path: github.com/imfing/hextra
-
-# markup:
-#   # allow raw html
-#   goldmark:
-#     renderer:
-#       unsafe: true
-# 
-#   # enable hextra syntax highlight
-#   highlight:
-#     noClasses: false
+title: ZARCHIVE
+theme: PaperMod
 
 menu:
   main:
     - name: Articles
-      pageRef: /articles
+      url: /articles
       weight: 1
     - name: Videos
-      pageRef: /videos
+      url: /videos
       weight: 2
     - name: Appearances
       url: /appearances
@@ -40,14 +26,33 @@ menu:
       url: /about
     - name: Search
       weight: 7
-      params:
-        type: search
+      url: /search
+
+taxonomies:
+  category: categories
+
 
 params:
-  navbar:
-    displayTitle: true
-    displayLogo: false
+  defaultTheme: light
+  hideSummary: true
+  fuseOpts:
+    isCaseSensitive: false
+    shouldSort: true
+    location: 0
+    distance: 1000
+    threshold: 0.4
+    minMatchCharLength: 0
+    # limit: 10 # refer: https://www.fusejs.io/api/methods.html#search
+    keys: ["title", "permalink", "summary", "content"]
+  ShowShareButtons: true
+  ShowPostNavLinks: true
 
-  footer:
-    displayCopyright: false
-    displayPoweredBy: true
+
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+
+pagination:
+  pagerSize: 50

@@ -1,0 +1,58 @@
+ignoreLogs: ['warning-goldmark-raw-html']
+
+# Hugo configuration file
+baseUrl: "https://friendsofzman.com/"
+languageCode: "en-us"
+title: Zarchive
+
+# import hextra as module
+module:
+  imports:
+    - path: github.com/imfing/hextra
+
+# markup:
+#   # allow raw html
+#   goldmark:
+#     renderer:
+#       unsafe: true
+# 
+#   # enable hextra syntax highlight
+#   highlight:
+#     noClasses: false
+
+menu:
+  main:
+    - name: Articles
+      pageRef: /articles
+      weight: 1
+    - name: Videos
+      pageRef: /videos
+      weight: 2
+    - name: Appearances
+      url: /appearances
+      weight: 3
+    - name: In Memoriam
+      url: /memoriam
+      weight: 4
+    - name: Downloads
+      weight: 5
+      url: /downloads
+    - name: About
+      weight: 6
+      url: /about
+    - name: Search
+      weight: 7
+      params:
+        type: search
+
+params:
+  navbar:
+    displayTitle: true
+    displayLogo: false
+
+  footer:
+    displayCopyright: false
+    displayPoweredBy: true
+
+taxonomies:
+  category: categories
