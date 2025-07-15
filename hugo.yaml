@@ -1,3 +1,5 @@
+ignoreErrors: ["error-remote-getjson"]
+
 # Hugo configuration file
 baseUrl: "https://friendsofzman.com/"
 languageCode: "en-us"
