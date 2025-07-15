@@ -58,3 +58,10 @@ outputs:
 
 pagination:
   pagerSize: 50
+
+# GitHub Pages
+# https://gohugo.io/host-and-deploy/host-on-github-pages/
+caches:
+  images:
+    dir: :cacheDir/images
+
