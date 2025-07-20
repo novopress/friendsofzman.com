@@ -1,7 +1,8 @@
 baseurl = "https://friendsofzman.com"
 title = "Zarchive"
 languageCode = "en-us"
-theme = "roadster-foz"
+#theme = "roadster-foz"
+theme = "archie"
 
 [Pagination]
   pagerSize = 40
