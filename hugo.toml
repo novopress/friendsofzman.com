@@ -7,6 +7,35 @@ theme = "archie"
 [Pagination]
   pagerSize = 40
 
+[Menu]
+[[menu.main]]
+  name = "Read"
+  url = "/articles/"
+  weight = 1
+
+[[menu.main]]
+  name = "Watch"
+  url = "/videos/"
+  weight = 2
+
+[[menu.main]]
+  name = "Listen"
+  url = "/podcasts/"
+  weight = 3
+
+[[menu.main]]
+  name = "Memoriam"
+  url = "/memoriam/"
+  weight = 4
+
+[[menu.main]]
+  name = "About"
+  url = "/about/"
+  weight = 5
+
+
+# prev. theme below
+
 [services.disqus]
 #  shortname = "" # Enable Disqus by entering your Disqus shortname
 [services.googleAnalytics]
@@ -36,63 +65,3 @@ theme = "archie"
   googleFontsLink = "https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" # Load Google Fonts
   customCSS = ["css/custom.css"] # Include custom CSS files
   customJS = ["js/custom.js"] # Include custom JS files
-
-[Params.style.vars]
-  highlightColor = "#e22d30" # Override highlight color
-
-  # Override font-family sets
-  # Take care of different quotes OR escaping symbols in these params if necessary
-  fontFamilyPrimary = "'Open Sans', Helvetica, Arial, sans-serif"
-  # Secondary font-family set responsible for pre, code, kbd, and samp tags font
-  fontFamilySecondary = "SFMono-Regular, Menlo, Monaco, Consolas, 'Liberation Mono', 'Courier New', monospace"
-
-[Params.logo]
-  # image = "img/placeholder.png" # Logo image. Path relative to "static"
-  title = "Zarchive" # Logo title, otherwise will use site title
-  subtitle = "Sanity in an insane world." # Logo subtitle
-
-[Params.thumbnail]
-  # visibility = ["list", "post"] # Control thumbnail visibility
-
-[Params.sidebar]
-  home = "right" # Configure layout for home page
-  list = "right" # Configure layout for list pages
-  single = "right" # Configure layout for single pages
-  # Enable widgets in given order
-  ###### Note: "search" (via ddg and maybe goog) is an option)
-  widgets = ["about", "categories"]
-
-[Params.widgets]
-  recent_num = 5 # Set the number of articles in the "Recent articles" widget
-  categories_counter = false # Enable counter for each category in "Categories" widget
-  tags_counter = false # Enable counter for each tag in "Tags" widget
-
-[Params.widgets.social]
-  cached = false # activate cache if true
-  # Enable parts of social widget
-  # twitter = "username"
-  # instagram = "username"
-  # linkedin = "username"
-  # telegram = "username"
-  # github = "username"
-  # gitlab = "username"
-  # bitbucket = "username"
-  # email = "example@example.com"
-
-# Custom social links
-[[Params.widgets.social.custom]]
-  # title = "Youtube"
-  # url = "https://youtube.com/user/username"
-  # icon = "youtube.svg" # Optional. Path relative to "layouts/partials"
-  # rel = "noopener noreferrer" # Set to false to remove the rel attribute
-
-[[Params.widgets.social.custom]]
-  # title = "My Home Page"
-  # url = "https://example.com"
-
-[Params.widgets.search]
- cached = false # activate cache if true
-  url = "https://google.com/search"
-  [Params.widgets.search.input]
-    name = "sitesearch"
-    pre = ""
