@@ -2,7 +2,7 @@ header {
     margin-top: 1rem;
 }
 
-.banner {
+#banner {
     background-image: url("/ThierschLudwig_AlaricAAthenes.jpg");
     background-position: 50% 40%;
     height: 100px;
@@ -17,4 +17,19 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 1rem;
   margin-bottom: 1rem;
+}
+
+hr {
+    border-top: 2px dotted black;
+    margin: 0 auto;
+    width: 40px;
+}
+
+p {
+    font-size: 14pt;
+}
+
+.article-tag {
+    color: #A22;
+    padding: 0.1rem 0.25rem;
 }

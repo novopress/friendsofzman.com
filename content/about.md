@@ -1,16 +1,13 @@
 ---
-title: The Zarchive
+date: 2025-07-21
+title: Mission
 type: about
 ---
 
-This is the **Z**archive -- a website dedicated to the late & great **Z Man**, *aka* Christopher Zeeman, *aka* John Christopher Zander.
+The **Zarchive** is dedicated to the late John Christopher Zander, known online as Christopher Zeeman or the **Z Man**.
 
-At the time of his untimely death in June 2025, **Z Man** was the most prolific political pundit in America. He wrote an insightful and topical article every day, for over ten years, and published an hour-long podcast every week without fail.
+At the time of his untimely death in June 2025, **Z Man** was the most prolific political pundit in America. He wrote an insightful and topical article every day for over ten years, and published an hour-long podcast every week without fail.
 
-His articles were published to [thezman.com](https://thezman.com), but he later adopted [Substack](thedissident.substack.com) to post his free and premium articles and videos online.
+His articles were originally published to *[thezman.com](https://thezman.com)*, but he later adopted *[Substack](thedissident.substack.com)* to also publish premium (paywalled) articles and videos online.
 
-Here, we've collected as much of **Z Man**'s output as reasonably possible. Before his unexpected passing, he treated us to a new perspective every day, and we want to give these back to you.
-
-In the navigation menu, you'll find links to his Articles, Videos, Appearances, and Memorials.
-
-
+We've collected here as much of **Z Man**'s output as reasonably possible, and hope you enjoy spending time with his work as much as we have.
