@@ -15,17 +15,17 @@ copyright = "© John Christopher Zander (content) & Novo Press (website)."
 
 [[menu.main]]
   name = "Read"
-  url = "/articles/"
+  url = "/read/"
   weight = 1
 
 [[menu.main]]
   name = "Watch"
-  url = "/videos/"
+  url = "/watch/"
   weight = 2
 
 [[menu.main]]
   name = "Listen"
-  url = "/podcasts/"
+  url = "/listen/"
   weight = 3
 
 [[menu.main]]
@@ -43,3 +43,9 @@ copyright = "© John Christopher Zander (content) & Novo Press (website)."
 
 [taxonomies]
   category = "categories"
+
+[markup]
+    [markup.tableOfContents]
+        endLevel = 2
+        ordered = false
+        startLevel = 2

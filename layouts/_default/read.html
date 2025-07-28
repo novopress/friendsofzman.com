@@ -1,5 +1,5 @@
 {{ define "main" }}
-<h1>Articles</h1>
+<h1>Read</h1>
 {{ .Content }}
 
 <p>
@@ -18,7 +18,7 @@
 
 ---
 
-{{ $articles := where .Site.RegularPages "Section" "articles" }}
+{{ $articles := where .Site.RegularPages "Section" "read" }}
 {{ range $articles.GroupByDate "January 2006" }}
 <div>
     <h2>{{ .Key }}</h2>
