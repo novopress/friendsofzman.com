@@ -1,3 +1,7 @@
+.content {
+    max-width: 1200px;
+}
+
 header {
     margin-top: 1rem;
 }
@@ -32,4 +36,9 @@ p {
 .article-tag {
     color: #A22;
     padding: 0.1rem 0.25rem;
+}
+
+audio {
+    margin-top: 1rem;
+    margin-bottom: 3rem;
 }
