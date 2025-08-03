@@ -1,10 +1,15 @@
 {{ define "main" }}
 <h1>Listen</h1>
-<p><strong>Z Man</strong>’s podcast ran for 373 episodes, from July 2017 to June 2025. He also released 152 additional episodes between July 2022 and June 2025 for paid subscribers. There were also a number of guest appearances on other podcasts, which @AJCement helped to identify.</p>
-<p>Contents:</p>
-{{ .TableOfContents }}
-<br/>
-<hr/>
-<br/>
-{{ .Content }}
+<div class="row">
+  <div class="col-3">
+    <ul>
+      <li>Podcast</li>
+      <li>Premium</li>
+      <li><a href="/listen/guest">Guest Appearances</a></li>
+    </ul>
+  </div>
+  <div class="col-9">
+    {{ .Content }}
+  </div>
+</div>
 {{ end }}

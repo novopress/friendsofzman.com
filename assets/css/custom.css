@@ -20,7 +20,9 @@
 /* Custom */
 
 .content {
-    max-width: 1200px;
+    margin: 0 auto;
+    max-width: 1000px;
+    padding: 2ch;
 }
 
 header {
@@ -60,6 +62,16 @@ p {
 }
 
 audio {
+    display: block;
+    height: auto;
     margin-top: 1rem;
-    margin-bottom: 3rem;
+    margin-bottom: 7rem;
+    max-width: 100%;
+}
+
+video {
+    display: block;
+    height: auto;
+    margin-bottom: 7rem;
+    max-width: 100%;
 }
