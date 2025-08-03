@@ -5,10 +5,9 @@ theme = "archie"
 copyright = "© John Christopher Zander (content) & Novo Press (website)."
 
 [params]
-  copyright = "Z Man. Site by Novo Press."
   description = "Archive of the timeless writings of Z Man, Christopher Zeeman, John Christopher Zander, RIP."
-  customCSS = ["css/custom.css"] # Include custom CSS files
-  customJS = ["js/custom.js"] # Include custom JS files
+  customCSS = ["css/custom.css"]
+  customJS = ["js/custom.js"]
 
 [pagination]
   pagerSize = 10

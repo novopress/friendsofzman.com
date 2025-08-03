@@ -1,3 +1,24 @@
+/* Chota overrides */
+:root {
+  --bg-color: #f7f7f7;
+  --bg-secondary-color: #f3f3f6;
+  --color-primary: #14854F;
+  --color-primary: #AA2222;
+  --color-lightGrey: #d2d6dd;
+  --color-grey: #747681;
+  --color-darkGrey: #3f4144;
+  --color-error: #d43939;
+  --color-success: #28bd14;
+  --grid-maxWidth: 120rem;
+  --grid-gutter: 2rem;
+  --font-size: 1.6rem;
+  --font-color: #333333;
+  --font-family-sans: sans-serif;
+  --font-family-mono: monaco, "Consolas", "Lucida Console", monospace;
+}
+
+/* Custom */
+
 .content {
     max-width: 1200px;
 }
