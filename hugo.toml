@@ -4,9 +4,13 @@ languageCode = "en-us"
 theme = "archie"
 copyright = "© John Christopher Zander (content) & Novo Press (website)."
 
+ignoreLogs = ['warning-goldmark-raw-html']
+
+
 [params]
   description = "Archive of the timeless writings of Z Man, Christopher Zeeman, John Christopher Zander, RIP."
-  customCSS = ["css/custom.css"]
+  # customCSS = ["css/custom.css"]
+  customSCSS = ["scss/custom.scss"]
   customJS = ["js/custom.js"]
 
 [pagination]
@@ -28,14 +32,9 @@ copyright = "© John Christopher Zander (content) & Novo Press (website)."
   weight = 3
 
 [[menu.main]]
-  name = "Memoriam"
-  url = "/memoriam/"
-  weight = 4
-
-[[menu.main]]
   name = "About"
   url = "/about/"
-  weight = 5
+  weight = 4
 
 [author]
   name = "Z Man"
