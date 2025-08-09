@@ -2,14 +2,13 @@ baseurl = "https://novopress.github.io/friendsofzman.com/"
 title = "Zarchive"
 languageCode = "en-us"
 theme = "archie"
-copyright = "© John Christopher Zander (content) & Novo Press (website)."
+copyright = "© John Christopher Zander (content)."
 
 ignoreLogs = ['warning-goldmark-raw-html']
 
 
 [params]
   description = "Archive of the timeless writings of Z Man, Christopher Zeeman, John Christopher Zander, RIP."
-  # customCSS = ["css/custom.css"]
   customSCSS = ["scss/custom.scss"]
   customJS = ["js/custom.js"]
 
