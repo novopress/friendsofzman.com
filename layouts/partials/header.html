@@ -33,15 +33,25 @@
 	{{- end -}}
 
   <!-- Chota CSS -->
-  <link rel="stylesheet" href="https://unpkg.com/chota">
+  <!-- <link rel="stylesheet" href="https://unpkg.com/chota"> -->
 
 	<!-- Custom CSS style & JS get applied last -->
-	{{- if isset .Site.Params "customcss" }}
+	{{- if isset .Site.Params "customCSS" }}
 		{{ range .Site.Params.customCSS }}
 		{{ $customstyle := resources.Get . | fingerprint }}
 		<link rel="stylesheet" type="text/css" href="{{ $customstyle.Permalink }}">
 		{{ end }}
 	{{- end -}}
+
+  <!-- Custom SCSS applied even laster -->
+  {{- if isset .Site.Params "customSCSS" }}
+    {{ range .Site.Params.customSCSS }}
+    {{ $customstyle := resources.Get . }}
+    {{ $css := $customstyle | css.Sass | fingerprint }}
+    <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}">
+    {{ end }}
+  {{- end -}}
+
 
 	{{- range .Site.Params.customJS }}
 	{{- if or (hasPrefix . "http://") (hasPrefix . "https://") }}
