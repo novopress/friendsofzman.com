@@ -1,0 +1,7 @@
+<h3 id="site-title">{{ .Site.Title }}</h3>
+<img src="/ludwig-circle.png" alt="Logo" id="logo" />
+<nav>
+{{ range .Site.Menus.main }}
+  <a href="{{ .URL }}">{{ .Name }}</a>
+{{ end }}
+</nav>
