@@ -32,9 +32,6 @@
 		<link id="darkModeStyle" rel="stylesheet" type="text/css" href="{{ $darkstyle.Permalink }}" {{ if eq .Site.Params.mode "auto" }}media="(prefers-color-scheme: dark)"{{ end }} {{ if eq .Site.Params.mode "toggle" }}disabled{{ end }} />
 	{{- end -}}
 
-  <!-- Chota CSS -->
-  <!-- <link rel="stylesheet" href="https://unpkg.com/chota"> -->
-
 	<!-- Custom CSS style & JS get applied last -->
 	{{- if isset .Site.Params "customCSS" }}
 		{{ range .Site.Params.customCSS }}
@@ -42,6 +39,7 @@
 		<link rel="stylesheet" type="text/css" href="{{ $customstyle.Permalink }}">
 		{{ end }}
 	{{- end -}}
+  <meta title="lol">
 
   <!-- Custom SCSS applied even laster -->
   {{- if isset .Site.Params "customSCSS" }}
@@ -51,15 +49,4 @@
     <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}">
     {{ end }}
   {{- end -}}
-
-
-	{{- range .Site.Params.customJS }}
-	{{- if or (hasPrefix . "http://") (hasPrefix . "https://") }}
-	<script src="{{ . }}"></script>
-	{{- else if (hasPrefix . "<script")}}
-    {{ .| safeHTML }}
-	{{- else }}
-	<script src="{{ absURL . }}"></script>
-	{{- end }}
-	{{- end }}
 </head>
