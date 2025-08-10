@@ -1,0 +1,17 @@
+/* Custom CSS for Zarchive */
+body {
+  font-family: 'Georgia', serif;
+  line-height: 1.6;
+}
+
+.content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Test styles to verify CSS loading */
+.custom-test {
+  color: #AA2222;
+  font-weight: bold;
+}
