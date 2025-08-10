@@ -33,20 +33,20 @@
 	{{- end -}}
 
 	<!-- Custom CSS style & JS get applied last -->
-	{{- if isset .Site.Params "customCSS" }}
-		{{ range .Site.Params.customCSS }}
-		{{ $customstyle := resources.Get . | fingerprint }}
-		<link rel="stylesheet" type="text/css" href="{{ $customstyle.Permalink }}">
+	{{- if isset .Site.Params "custom_css" }}
+		{{ range .Site.Params.custom_css }}
+		{{ $custom_css := resources.Get . | fingerprint }}
+		<link rel="stylesheet" type="text/css" href="{{ $custom_css.Permalink }}">
 		{{ end }}
 	{{- end -}}
-  <meta title="lol">
 
   <!-- Custom SCSS applied even laster -->
-  {{- if isset .Site.Params "customSCSS" }}
-    {{ range .Site.Params.customSCSS }}
-    {{ $customstyle := resources.Get . }}
-    {{ $css := $customstyle | css.Sass | fingerprint }}
-    <link rel="stylesheet" type="text/css" href="{{ $css.Permalink }}">
+  {{- if isset .Site.Params "custom_scss" }}
+    {{ range .Site.Params.custom_scss }}
+		{{ $custom_scss := resources.Get . | fingerprint }}
+		{{ with $custom_scss | toCSS }}
+			<link rel="stylesheet" type="text/css" href="{{ .RelPermalink }}">
+		{{ end }}
     {{ end }}
   {{- end -}}
 </head>

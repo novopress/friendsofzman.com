@@ -1,4 +1,4 @@
-baseurl = "https://novopress.github.io/friendsofzman.com/"
+baseurl = "/"
 title = "Zarchive"
 languageCode = "en-us"
 theme = "archie"
@@ -6,11 +6,10 @@ copyright = "© John Christopher Zander (content)."
 
 ignoreLogs = ['warning-goldmark-raw-html']
 
-
 [params]
   description = "Archive of the timeless writings of Z Man, Christopher Zeeman, John Christopher Zander, RIP."
-  customSCSS = ["scss/custom.scss"]
-  customJS = ["js/custom.js"]
+  custom_css = ["css/custom.css"]
+  custom_scss = ["scss/custom.scss"]
 
 [pagination]
   pagerSize = 10
@@ -40,3 +39,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
 
 [taxonomies]
   category = "categories"
+
+[caches]
+  [caches.images]
+    dir = ':cacheDir/images'

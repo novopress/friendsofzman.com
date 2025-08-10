@@ -14,30 +14,103 @@ theme: watch
 
 {{< ia-video
     title="2025-02-19 - RamZPaul Show | Past Week"
-    desc="Join ZMAN and me for the Wednesday Wrap-up at 7:00 P.M. CST. We will discuss the news of the past week."
+    desc="We will discuss the news of the past week."
     url="https://archive.org/download/zman-ramz-2025-02-19-pastweek/RamZPaul_2025-02-19_PastWeek_ZMan.mp4"
 >}}
 
 {{< ia-video
     title="2025-02-26 - RamZPaul Show | Nixon & Trump"
-    desc="Join ZMAN and me for the Wednesday Wrap-up at 7:00 P.M. CST. We will discuss Nixon and Trump."
+    desc="We will discuss Nixon and Trump."
     url="https://archive.org/download/zman-ramz-2025-02-26-nixon/RamZPaul_2025-02-26_OnNixonAndTrump_ZMan.mp4"
 >}}
 
 {{< ia-video
     title="2025-03-05 - RamZPaul Show | On Communism"
-    desc="Join ZMAN and me for the Wednesday Wrap-up at 7:00 P.M. CST. We will discuss Communism."
+    desc="We will discuss Communism."
     url="https://archive.org/download/zman-ramz-2025-03-05-communism/RamZPaul_2025-03-05-OnCommunism_ZMan.mp4"
 >}}
 
 {{< ia-video
     title="2025-03-12 - RamZPaul Show | On Reagan"
-    desc="Join ZMAN and me for the Wednesday Wrap-up at 7:00 P.M. CST. We will discuss Ronald Reagan and the impact he had on today’s world."
+    desc="We will discuss Ronald Reagan and the impact he had on today’s world."
     url="https://archive.org/download/zman-ramz-2025-03-12-reagan/RamZPaul_2025-03-12_OnReagan_ZMan.mp4"
 >}}
 
 {{< ia-video
     title="2025-03-19 - RamZPaul Show | On Uranus"
-    desc="Join ZMAN and me for the Wednesday Wrap-up at 7:00 P.M. CST. We will discuss NASA, Space X and space exploration."
+    desc="We will discuss NASA, Space X and space exploration."
     url="https://archive.org/download/zman-ramz-2025-03-19-uranus/RamZPaul_2025-03-19_UranusAndOtherHeavenlyBodies_ZMan.mp4"
 >}}
+
+{{< ia-video
+    title="2025-04-02 - RamZPaul Show | A.I."
+    desc="We will discuss AI and its implications to society."
+    url="https://archive.org/download/zman-ramz-2025-04-02-ai/RamZPaul_2025-04-02_DiscussAI_ZMan.mp4"
+>}}
+
+{{< ia-video
+    title="2025-04-09 - RamZPaul Show | Globalization"
+    desc="We will discuss tariffs and globalization."
+    url="https://archive.org/download/zman-ramz-2025-04-09/RamZPaul_2025-04-09_OnGlobalization_ZMan.mp4"
+>}}
+
+{{< ia-video
+    title="2025-04-16 | Christianity in America"
+    desc="We will discuss all things related to Christianity and its influence on politics."
+    url="https://archive.org/download/zman-ramz-2025-04-16-christianity/RamZPaul_2025-04-16_OnChristianityInAmerica_ZMan.mp4"
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
+{{< ia-video
+    title=""
+    desc=""
+    url=""
+>}}
+
