@@ -3,10 +3,10 @@
     {{- partial "header.html" . -}}
     <body>
         <div id="container">
-          <div id="nav">
+          <div id="header">
           {{- partial "nav.html" . -}}
           </div>
-          <div id="main">
+          <div id="content">
           {{- block "main" . }}{{- end }}
           </div>
           <div id="footer">

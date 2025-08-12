@@ -20,51 +20,94 @@
 /* Custom */
 
 #container {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  margin-top: 2rem;
+  max-width: 1600px;
+}
+
+#header {
+  flex: 1 1 100px;
+  margin: 0 auto;
+  max-width: 100%;
+  min-width: 100px;
+  padding: 0 32px 32px 32px;
+  text-align: center;
+
+  #site-title {
+    text-align: center;
+  }
+  a {
+    min-width: 100px;
+  }
+  img {
+      max-width: 100px;
+  }
+}
+
+#content {
+  flex: 1 1 1400px;
+
+  h1 {
+    font-variant: small-caps;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: center;
+  }
+  h2 {
+    border-bottom: 1px solid black;
+    font-variant: small-caps;
+    text-align: center;
+  }
+
+  #columns {
     display: flex;
-    flex-wrap: wrap;
-    gap: 56px;
-    margin: 0 auto;
-    max-width: 1600px;
+
+    h2 {
+      border-bottom: unset;
+      font-variant: unset;
+      text-align: left;
+    }
+
+    nav {
+      min-width: 200px;
+      padding: 0 32px;
+
+      ul {
+        list-style-type: none;
+        padding-left: 0;
+      }
+    }
+    main {
+      padding: 0 32px;
+    }
+  }
 }
 
-#nav {
-    flex: 1 1 100px;
-    margin: 0 auto;
-    max-width: 100%;
-    min-width: 100px;
-    text-align: center;
-}
-#site-title {
-    text-align: center;
-}
-#nav img {
-    max-width: 100px;
-}
-#nav a {
-    min-width: 100px;
-}
-
-#main {
-    flex: 1 1 1400px;
-}
 #footer {
-    flex: 0 0 100%;
-}
-
-header {
-    margin-top: 1rem;
+  border-top: 1px solid #ccc;
+  flex: 0 0 100%;
+  margin-top: 5rem;
+  padding-top: 1rem;
 }
 
 #banner {
-    background-image: url("/ThierschLudwig_AlaricAAthenes.jpg");
-    background-position: 50% 40%;
-    height: 100px;
-    margin-bottom: 3rem;
-    width: 100%;
+  background-image: url("/ThierschLudwig_AlaricAAthenes.jpg");
+  background-position: 50% 40%;
+  height: 100px;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 a {
-  border-bottom: 1px solid #A22;
+  color: #A22;
+}
+
+blockquote {
+  border-left: 2px solid #ccc;
+  margin: 20px 0 20px 20px;
+  padding: 10px;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -73,31 +116,31 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 hr {
-    border-top: 2px dotted black;
-    margin: 0 auto;
-    width: 40px;
+  border-top: 2px dotted black;
+  margin: 0 auto;
+  width: 40px;
 }
 
 p {
-    font-size: 14pt;
+  font-size: 12pt;
 }
 
 .article-tag {
-    color: #A22;
-    padding: 0.1rem 0.25rem;
+  color: #A22;
+  padding: 0.1rem 0.25rem;
 }
 
 audio {
-    display: block;
-    height: auto;
-    margin-top: 1rem;
-    margin-bottom: 7rem;
-    max-width: 100%;
+  display: block;
+  height: auto;
+  margin-top: 1rem;
+  margin-bottom: 7rem;
+  max-width: 100%;
 }
 
 video {
-    display: block;
-    height: auto;
-    margin-bottom: 7rem;
-    max-width: 100%;
+  display: block;
+  height: auto;
+  margin-bottom: 7rem;
+  max-width: 100%;
 }
