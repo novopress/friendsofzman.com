@@ -1,33 +1,35 @@
 {{ define "main" }}
-<h1>Read</h1>
-{{ .Content }}
-
-<p>
-  {{ $categories := .Site.Taxonomies.categories }}
-  {{ if $categories }}
-    {{ $lastIndex := sub (len $categories) 1 }}
-    {{ $index := 0 }}
-    {{ range $name, $_ := $categories }}
-    <a class='article-tag' href="{{ "/categories/" | relURL }}{{ $name | urlize }}">{{ $name | title }}</a> ({{ len $_}}){{ if lt $index $lastIndex }}, {{ end }}
-      {{ $index = add $index 1 }}
-    {{ end }}
-  {{ else }}
-    No categories found.
-  {{ end }}
-</p>
-
----
-
-{{ $articles := where .Site.RegularPages "Section" "read" }}
-{{ range $articles.GroupByDate "January 2006" }}
-<div>
-    <h2>{{ .Key }}</h2>
-    <p>
-        {{ $len := len .Pages }}
-        {{ range $index, $page := .Pages }}
-            <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>{{ if ne (add $index 1) $len }} &nbsp;/&nbsp; {{ end }}
+  <h2>Read</h2>
+  <div id="columns">
+    <nav>
+      <h3>Categories</h3>
+      <ul>
+        {{ $categories := .Site.Taxonomies.categories }}
+        {{ if $categories }}
+          {{ $lastIndex := sub (len $categories) 1 }}
+          {{ $index := 0 }}
+          {{ range $name, $_ := $categories }}
+            <li><a class='article-tag' href="{{ "/categories/" | relURL }}{{ $name | urlize }}">{{ $name | title }}</a> ({{ len $_}})</li>
+          {{ end }}
+        {{ else }}
+          No categories found.
         {{ end }}
-    </p>
-</div>
-{{ end }}
+      </ul>
+    </nav>
+    <main>
+      {{ .Content }}
+      {{ $articles := where .Site.RegularPages "Section" "read" }}
+      {{ range $articles.GroupByDate "January 2006" }}
+      <div>
+          <h2>{{ .Key }}</h2>
+          <p>
+              {{ $len := len .Pages }}
+              {{- range $index, $page := .Pages -}}
+                <a href="{{ $page.Permalink }}">{{ $page.Title }}</a>{{ if ne (add $index 1) $len }} &nbsp;/&nbsp; {{ end }}
+              {{- end -}}
+          </p>
+      </div>
+      {{ end }}
+    </main>
+  </div>
 {{ end }}
