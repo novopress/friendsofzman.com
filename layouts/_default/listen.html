@@ -1,24 +1,18 @@
 {{ define "main" }}
-  <h2>Listen</h2>
+<h2>Listen{{ if ne .Title "Listen" }}: {{ .Title }}{{ end }}</h2>
   <div id="columns">
     <nav>
       <h3>Podcast</h3>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li><a href="/listen/podcast">Z Blog Power Hour</a></li>
       </ul>
       <h3>Premium</h3>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li><a href="/listen/premium">Substack Episodes</a></li>
       </ul>
-      <h3>Guest Appearances</h3>
+      <h3>Other</h3>
       <ul>
-        <li>1</li>
-        <li>2</li>
-        <li>3</li>
+        <li><a href="/listen/guest">Guest Appearances</a></li>
       </ul>
     </nav>
     <main>

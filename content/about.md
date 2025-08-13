@@ -1,6 +1,6 @@
 ---
 date: 2025-07-21
-title: Mission
+title: About
 type: about
 ---
 
