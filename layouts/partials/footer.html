@@ -1,0 +1,22 @@
+<footer>
+  <div style="display:flex">
+    {{- range $index, $key := .Site.Params.Social -}}
+    {{- if hasPrefix $key.icon "simple:" -}}
+    <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}"><i class="si si-{{ substr $key.icon 7 }}"></i></a>
+    {{- else -}}
+    <a class="soc" href="{{ $key.url }}" rel="me" title="{{ $key.name }}">{{ template "feathericon" (dict "Icon" $key.icon "UseCDN" .Site.Params.useCDN) }}</a>
+    {{- end -}}
+    <a class="border"></a>
+    {{- end -}}
+  </div>
+  <div class="footer-info">
+    <p class="attr">
+      {{ dateFormat "2006" now }} {{ with .Site.Copyright }} {{ . }}<br/>{{ end }}
+      Attribution: <a href="https://gohugo.io">Hugo</a> and <a href="https://github.com/athul/archie">Archie</a> (modified); 
+      <a href="https://github.com/yt-dlp/yt-dlp">yt-dlp</a> and <a href="https://github.com/lightpohl/podcast-dl/">podcast-dl</a>; 
+      <a href="https://www.archive.org">internet-archive</a> (<a href="https://archive.org/developers/internetarchive/cli.html">ia</a>).
+  </div>
+</footer>
+{{ if not hugo.IsServer }}
+{{ template "_internal/google_analytics.html" . }}
+{{ end }}

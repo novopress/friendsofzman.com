@@ -59,6 +59,12 @@
     border-bottom: 1px solid black;
     font-variant: small-caps;
     text-align: center;
+
+    &.post-title {
+      border-bottom: unset;
+      margin: 0 auto 1rem auto;;
+      max-width: 50ch;
+    }
   }
 
   #columns {
@@ -81,6 +87,7 @@
     }
     main {
       padding: 0 32px;
+      width: 100%;
     }
   }
 }
@@ -90,6 +97,11 @@
   flex: 0 0 100%;
   margin-top: 5rem;
   padding-top: 1rem;
+
+  a {
+    color: black;
+  }
+
 }
 
 #banner {
@@ -151,18 +163,18 @@ video {
 }
 
 .post-meta {
-  /* border-bottom: 1px solid #ccc; */
   display: flex;
   flex-wrap: wrap;
-  justify-content: center; // centers all pairs horizontally
+  justify-content: space-between;
   gap: 1rem;
-  margin: 0;
+  margin: 0 auto;
   padding: 0 2ch 1ch 2ch;
-  text-align: center; // centers text inside each item
 
   dt {
+    display: inline-flex;
     font-weight: bold;
     margin: 0;
+    vertical-align: middle;
 
     &::after {
       content: " ";
@@ -170,15 +182,26 @@ video {
   }
 
   dd {
+    display: inline;
     margin: 0;
   }
 }
 
 section.body {
-  border-top: 1px solid #ccc;
   font-size: 14pt;
   line-height: 20pt;
-  margin: 0 auto;
+  margin: 2rem auto;
   max-width: 50ch;
   text-align: justify;
+
+  p:first-child::first-letter {
+    font-size: 3em;
+    float: left;
+    margin-right: 0.1em;
+  }
+}
+
+.hr {
+  border-bottom: 1px solid black;
+  margin: 0 auto 1rem auto;
 }

@@ -1,4 +1,7 @@
-<h3>{{ .Get "title" }}</h3>
+{{ $trimmedTitle := last 1 (split (.Get "url") "/") }}
+{{ $lastSegment := last 1 (split (.Get "url") "/") }}
+{{ $trimmedTitle := index $lastSegment 0 }}
+<h3 id="{{ $trimmedTitle }}">{{ .Get "title" }}</h3>
 <blockquote>{{ .Get "desc" }}</blockquote>
 <audio controls preload="metadata">
   <source src='{{ .Get "url" }}' type="audio/mpeg" />

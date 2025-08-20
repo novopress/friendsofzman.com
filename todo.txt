@@ -1,3 +1,5 @@
+- historical comments on each article
+- new comments for each article
 - links for premium audio
 - archive premium text
 - link photographs
