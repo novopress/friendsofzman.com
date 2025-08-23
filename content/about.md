@@ -1,7 +1,7 @@
 ---
 date: 2025-07-21
 title: About
-type: about
+type: page
 ---
 
 The **Zarchive** is dedicated to the late John Christopher Zander, known online as Christopher Zeeman or the **Z Man**.
