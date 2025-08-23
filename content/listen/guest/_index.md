@@ -2,7 +2,7 @@
 title: Guest Appearances
 date: 2025-07-25
 params:
-    nav: nav-listen-guest.html"
+    nav: nav-listen-guest.html
 ---
 
 Below you'll find **Z Man**'s guest appearances on other podcasts. They are organized by date of appearance and can be either streamed or downloaded (right-click > save-as).
