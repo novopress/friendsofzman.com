@@ -3,7 +3,7 @@
 {{ $trimmedTitle := index $lastSegment 0 }}
 <h3 id="{{ $trimmedTitle }}">{{ .Get "title" }}</h3>
 <blockquote>{{ .Get "desc" }}</blockquote>
-<video controls preload="metadata">
-  <source src='{{ .Get "url" }}' type="audio/mpeg" />
-  Your browser does not support the audio element.
+<video controls preload="none" poster='{{ .Get "poster" }}'>
+  <source src='{{ .Get "url" }}' type="audio/mp4" />
+  Your browser does not support the video element.
 </video>

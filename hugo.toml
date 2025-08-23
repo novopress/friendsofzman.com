@@ -7,6 +7,7 @@ copyright = "© John Christopher Zander (content)."
 ignoreLogs = ['warning-goldmark-raw-html']
 
 [params]
+  author = "Z Man"
   description = "Archive of the timeless writings of Z Man, Christopher Zeeman, John Christopher Zander, RIP."
   custom_css = ["css/custom.css"]
   custom_scss = ["scss/custom.scss"]

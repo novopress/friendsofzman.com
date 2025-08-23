@@ -1,11 +1,13 @@
 ---
 title: Guest Appearances
 date: 2025-07-25
-theme: listen
+params:
+    nav: nav-listen-guest.html"
 ---
 
 Below you'll find **Z Man**'s guest appearances on other podcasts. They are organized by date of appearance and can be either streamed or downloaded (right-click > save-as).
 
+...
 
 {{< ia-audio
     title="2017-04-19 - 2Kevins w/ Grace & Steel #78"
@@ -82,7 +84,7 @@ Below you'll find **Z Man**'s guest appearances on other podcasts. They are orga
 {{< ia-audio
     title="2023-09-25 - Coffee And A Mike #680"
     desc="We discuss how people are becoming decreasingly considerate, chaos of travel, infrastructure collapsing, financial disaster coming, how an individual can navigate and much more."
-    url="We discuss how people are becoming decreasingly considerate, chaos of travel, infrastructure collapsing, financial disaster coming, how an individual can navigate and much more."
+    url="https://archive.org/download/zman-coffee-680/CoffeeAndAMike_2023-09-25_E680_ChristopherZeeman.mp3"
 >}}
 
 {{< ia-audio

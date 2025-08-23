@@ -1,8 +1,8 @@
-- archive videos
-- archive premium audio
+- historical comments on each article
+- new comments for each article
+- links for premium audio
 - archive premium text
-- archive photographs etc
-- embed videos to page
+- link photographs
 - embed podcasts to page
 - compile memoriam page
 - sort premium podcast onto page

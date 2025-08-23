@@ -59,6 +59,12 @@
     border-bottom: 1px solid black;
     font-variant: small-caps;
     text-align: center;
+
+    &.post-title {
+      border-bottom: unset;
+      margin: 0 auto 1rem auto;;
+      max-width: 50ch;
+    }
   }
 
   #columns {
@@ -81,6 +87,7 @@
     }
     main {
       padding: 0 32px;
+      width: 100%;
     }
   }
 }
@@ -90,6 +97,11 @@
   flex: 0 0 100%;
   margin-top: 5rem;
   padding-top: 1rem;
+
+  a {
+    color: black;
+  }
+
 }
 
 #banner {
@@ -122,7 +134,7 @@ hr {
 }
 
 p {
-  font-size: 12pt;
+  /* font-size: 12pt; */
 }
 
 .article-tag {
@@ -134,13 +146,62 @@ audio {
   display: block;
   height: auto;
   margin-top: 1rem;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   max-width: 100%;
 }
 
 video {
   display: block;
   height: auto;
-  margin-bottom: 7rem;
+  margin-bottom: 4rem;
   max-width: 100%;
+  width: 600px;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.post-meta {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 1rem;
+  margin: 0 auto;
+  padding: 0 2ch 1ch 2ch;
+
+  dt {
+    display: inline-flex;
+    font-weight: bold;
+    margin: 0;
+    vertical-align: middle;
+
+    &::after {
+      content: " ";
+    }
+  }
+
+  dd {
+    display: inline;
+    margin: 0;
+  }
+}
+
+section.body {
+  font-size: 14pt;
+  line-height: 20pt;
+  margin: 2rem auto;
+  max-width: 50ch;
+  text-align: justify;
+
+  p:first-child::first-letter {
+    font-size: 3em;
+    float: left;
+    margin-right: 0.1em;
+  }
+}
+
+.hr {
+  border-bottom: 1px solid black;
+  margin: 0 auto 1rem auto;
 }
