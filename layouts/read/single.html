@@ -71,21 +71,26 @@
         </div>
         {{ end }}
         <div class="hr"></div>
-        <section class="body">
-          {{ .Content }}
-        </section>
-        <div class="post-tags">
-          {{ if ne .Type "page" }}
-          {{ if gt .Params.tags 0 }}
-          <nav class="nav tags">
-            <ul class="tags">
-              {{ range .Params.tags }}
-              <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
-              {{ end }}
-            </ul>
+        <div id="columns">
+          <nav>
+            {{ partial "nav-read.html" . }}
           </nav>
-          {{ end }}
-          {{ end }}
+          <section class="body">
+            {{ .Content }}
+          </section>
+          <div class="post-tags">
+            {{ if ne .Type "page" }}
+            {{ if gt .Params.tags 0 }}
+            <nav class="nav tags">
+              <ul class="tags">
+                {{ range .Params.tags }}
+                <li><a href="{{ "/tags/" | relLangURL }}{{ . | urlize }}">{{ . }}</a></li>
+                {{ end }}
+              </ul>
+            </nav>
+            {{ end }}
+            {{ end }}
+          </div>
         </div>
       </div>
 

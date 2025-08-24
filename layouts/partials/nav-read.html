@@ -40,7 +40,7 @@
 
 <h3>Categories</h3>
 <ul>
-  {{ $categories := .Site.Taxonomies.categories }}
+  {{ $categories := $.Site.Taxonomies.categories }}
   {{ if $categories }}
     {{ $lastIndex := sub (len $categories) 1 }}
     {{ $index := 0 }}
