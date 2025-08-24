@@ -2,7 +2,7 @@
 {{ $lastSegment := last 1 (split (.Get "url") "/") }}
 {{ $trimmedTitle := index $lastSegment 0 }}
 <h3 id="{{ $trimmedTitle }}">{{ .Get "title" }}</h3>
-<blockquote>{{ .Get "desc" }}</blockquote>
+<blockquote>{{ .Get "desc" | safeHTML }}</blockquote>
 <audio controls preload="metadata">
   <source src='{{ .Get "url" }}' type="audio/mpeg" />
   Your browser does not support the audio element.

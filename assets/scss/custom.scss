@@ -69,6 +69,7 @@
 
   #columns {
     display: flex;
+    flex-wrap: wrap;
 
     h2 {
       border-bottom: unset;
@@ -174,6 +175,7 @@ video {
     display: inline-flex;
     font-weight: bold;
     margin: 0;
+    padding-right: 1ch;
     vertical-align: middle;
 
     &::after {
