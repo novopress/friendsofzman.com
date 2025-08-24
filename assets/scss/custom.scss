@@ -191,9 +191,11 @@ video {
 
 section.body {
   font-size: 14pt;
-  line-height: 20pt;
+  line-height: 18pt;
   margin: 2rem auto;
   max-width: 50ch;
+  padding-left: 2ch;
+  padding-right: 2ch;
   text-align: justify;
 
   p:first-child::first-letter {
