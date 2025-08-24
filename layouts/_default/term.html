@@ -2,19 +2,7 @@
   <h2>Read</h2>
   <div id="columns">
     <nav>
-      <h3>Categories</h3>
-      <ul>
-        {{ $categories := .Site.Taxonomies.categories }}
-        {{ if $categories }}
-          {{ $lastIndex := sub (len $categories) 1 }}
-          {{ $index := 0 }}
-          {{ range $name, $_ := $categories }}
-            <li><a class='article-tag' href="{{ "/categories/" | relURL }}{{ $name | urlize }}">{{ $name | title }}</a> ({{ len $_}})</li>
-          {{ end }}
-        {{ else }}
-          No categories found.
-        {{ end }}
-      </ul>
+      {{ partial "nav-read.html" . }}
     </nav>
     <main>
       {{ if isset .Data "Term" }}
