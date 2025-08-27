@@ -1,0 +1,9 @@
+<!-- Get slug, trim to just ID, and include comments with same ID -->
+{{ $slug := .Params.original_slug }}
+{{ $id := replace .Params.original_slug "?p=" "" }}
+
+{{ $path := printf "assets/comments/%s.html" $id }}
+
+{{ if (fileExists $path) }}
+  {{ readFile $path | safeHTML }}
+{{ end }}

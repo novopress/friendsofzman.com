@@ -48,6 +48,7 @@
 
 #content {
   flex: 1 1 1400px;
+  max-width: 100%;
 
   h1 {
     font-variant: small-caps;
@@ -92,6 +93,13 @@
       padding: 0 32px;
       width: 100%;
     }
+    aside {
+      flex: 1 1;
+      margin: 2rem auto;
+      max-width: 50ch;
+      padding: 0 32px;
+
+    } 
   }
 }
 
@@ -210,4 +218,79 @@ section.body {
 .hr {
   border-bottom: 1px solid black;
   margin: 0 auto 1rem auto;
+}
+
+
+/* Aside / Comments */
+
+.metadata-stats {
+  .unique-usernames::before {
+    content: "Commenters: ";
+  }
+  .root-comments::before {
+    content: "Root comments: ";
+  }
+  .nested-comments::before {
+    content: "Nested comments: ";
+  }
+  .total-upvotes::before {
+    content: "Total upvotes: ";
+  }
+  .total-downvotes::before {
+    content: "Total downvotes: ";
+  }
+}
+
+.comment {
+  .comment-author {
+    font-weight: bold;
+  }
+  .comment-id {
+    color: #777;
+    &::after {
+      content: ")";
+    }
+    &::before {
+      content: "(";
+    }
+  }
+  .comment-date {
+    color: #777;
+  }
+  .comment-votes {
+    &::after {
+      content: " pts]";
+    }
+    &::before {
+      content: "[";
+    }
+    color: #333;
+  }
+  padding-top: 1rem;
+
+}
+
+#comments {
+  column-count: 3;
+  column-gap: 1rem;
+  h3 { display: none; }
+}
+
+.comment {
+  border-left: 1px solid #ddd;
+
+  &.level-0 {
+    border-left: unset;
+    break-inside: avoid-column;
+  }
+
+  &[class*="level-"]:not(.level-0) {
+    margin-left: 10px;
+    padding-left: 10px;
+  }
+
+  .comment-author.thezman {
+    background: gold;
+  }
+
 }
