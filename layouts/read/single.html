@@ -31,7 +31,7 @@
                   <dd>
                     {{ $slug := .Params.original_slug | default .Params.original_url }}
                     {{ $cleanSlug := ($slug | replaceRE "\\?p=(\\d+).*" "$1") | default "Original Post" }}
-                    <a href="{{ .Params.original_url }}">#{{ $cleanSlug }}</a>
+                    <a href="{{ .Params.original_url }}">{{ $cleanSlug }}</a>
                   </dd>
                 </div>
                 <!-- Archive -->
@@ -41,7 +41,7 @@
                     Archive
                   </dt>
                   <dd>
-                    <a href="https://web.archive.org/web/{{ .Params.original_url }}">#{{ $cleanSlug }}</a>
+                    <a href="https://web.archive.org/web/{{ .Params.original_url }}">{{ $cleanSlug }}</a>
                     [<a href="https://web.archive.org/web/*/{{ .Params.original_url}}">history</a>]
                   </dd>
                 </div>
