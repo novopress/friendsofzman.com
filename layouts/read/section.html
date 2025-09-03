@@ -1,6 +1,9 @@
 {{ define "main" }}
   <h2>Read</h2>
   <div id="columns">
+    <nav>
+      {{ partial "nav-read.html" . }}
+    </nav>
     <main>
       {{ .Content }}
       {{ $articles := where .Site.RegularPages "Section" "read" }}
@@ -16,8 +19,5 @@
       </div>
       {{ end }}
     </main>
-    <nav>
-      {{ partial "nav-read.html" . }}
-    </nav>
   </div>
 {{ end }}

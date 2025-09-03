@@ -1,4 +1,6 @@
-- historical comments on each article
+- taki posts
+- amren post
+x historical comments on each article
 - new comments for each article
 - links for premium audio
 - archive premium text

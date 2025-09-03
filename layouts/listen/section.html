@@ -1,6 +1,7 @@
 {{ define "main" }}
 <h2>Listen{{ if ne .Title "Listen" }}: {{ .Title }}{{ end }}</h2>
   <div id="columns">
+    {{ partial "nav-listen.html" }}
     <main>
       {{ .Content }}
     </main>
@@ -9,6 +10,5 @@
         {{ partial .Params.nav . }}
       {{ end }}
     </aside>
-    {{ partial "nav-listen.html" }}
   </div>
 {{ end }}
