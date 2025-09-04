@@ -235,6 +235,13 @@ section.body {
   padding-right: 2ch;
   text-align: justify;
 
+  img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 1rem 0;
+  }
+
   p:first-child::first-letter {
     font-size: 3em;
     float: left;
