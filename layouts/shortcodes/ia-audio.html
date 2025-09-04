@@ -1,9 +1,19 @@
 {{ $trimmedTitle := last 1 (split (.Get "url") "/") }}
 {{ $lastSegment := last 1 (split (.Get "url") "/") }}
 {{ $trimmedTitle := index $lastSegment 0 }}
+
 <h3 id="{{ $trimmedTitle }}">{{ .Get "title" }}</h3>
-<blockquote>{{ .Get "desc" | safeHTML }}</blockquote>
-<audio controls preload="metadata">
+
+<blockquote>{{ .Get "desc" | safeHTML }}
+    <a title="Right-click + Save Link As" class="audio-dl" href="{{ .Get "url" }}"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path fill="currentColor" d="M2 12h2v5h16v-5h2v5c0 1.11-.89 2-2 2H4a2 2 0 0 1-2-2zm10 3l5.55-5.46l-1.42-1.41L13 11.25V2h-2v9.25L7.88 8.13L6.46 9.55z"/></svg></a>
+  </blockquote>
+
+<div class="audio-icons">
+  </span>
+</div>
+
+
+<audio controls preload="none">
   <source src='{{ .Get "url" }}' type="audio/mpeg" />
   Your browser does not support the audio element.
 </audio>

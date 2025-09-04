@@ -10,6 +10,7 @@ ignoreLogs = ['warning-goldmark-raw-html']
   author = "Z Man"
   description = "Archive of the timeless writings of Z Man, Christopher Zeeman, John Christopher Zander, RIP."
   custom_css = ["css/custom.css"]
+  custom_js = ["js/nav-links.js"]
   custom_scss = ["scss/custom.scss"]
 
 [pagination]

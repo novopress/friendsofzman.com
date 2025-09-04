@@ -82,6 +82,8 @@
             {{ partial "read-comments-meta.html" . }}
           </aside>
         </div>
+        <h2 class="comments-heading">Comments (Historical)</h2>
+        <p class="comments-desc">The comments below were originally posted to thezman.com.</p>
         <div id="comments">
           {{ partial "read-comments.html" . }}
         </div>
@@ -91,4 +93,5 @@
 
   </article>
 </main>
+{{ partial "back-to-top.html" }}
 {{ end }}

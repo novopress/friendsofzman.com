@@ -1,15 +1,16 @@
 {{ define "main" }}
 <h2>Listen{{ if ne .Title "Listen" }}: {{ .Title }}{{ end }}</h2>
   <div id="columns">
-    {{ partial "nav-listen.html" . }}
+    {{ partial "nav-listen.html" }}
     <main>
       {{ .Content }}
     </main>
-    {{ if .Params.nav }}
-      <aside>
-        {{ partial .Params.nav }}
-      </aside>
-    {{ end }}
+    <aside>
+      {{ partial "nav-listen.html" }}
+      {{ if .Params.nav }}
+        {{ partial .Params.nav . }}
+      {{ end }}
+    </aside>
   </div>
 {{ partial "back-to-top.html" }}
 {{ end }}

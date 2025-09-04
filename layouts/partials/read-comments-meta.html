@@ -6,4 +6,5 @@
 
 {{ if (fileExists $path) }}
   {{ readFile $path | safeHTML }}
+  <a class="button" href="#comments">View Comments</a>
 {{ end }}

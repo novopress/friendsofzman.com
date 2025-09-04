@@ -1,16 +1,16 @@
 <!DOCTYPE html>
 <html>
     {{- partial "header.html" . -}}
-    <body>
+    <body id="btt">
         <div id="container">
           <div id="header">
-          {{- partial "nav.html" . -}}
+            {{- partial "nav.html" . -}}
           </div>
           <div id="content">
-          {{- block "main" . }}{{- end }}
+            {{- block "main" . }}{{- end }}
           </div>
           <div id="footer">
-          {{- partial "footer.html" . -}}
+            {{- partial "footer.html" . -}}
           </div>
         </div>
     </body>

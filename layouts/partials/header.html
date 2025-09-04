@@ -39,6 +39,12 @@
 		<link rel="stylesheet" type="text/css" href="{{ $custom_css.Permalink }}">
 		{{ end }}
 	{{- end -}}
+  {{- if isset .Site.Params "custom_js" }}
+    {{ range .Site.Params.custom_js }}
+      {{ $custom_js := resources.Get . | fingerprint }}
+      <script src="{{ $custom_js.RelPermalink }}" defer></script>
+    {{ end }}
+  {{ end }}
 
   <!-- Custom SCSS applied even laster -->
   {{- if isset .Site.Params "custom_scss" }}
@@ -49,4 +55,5 @@
 		{{ end }}
     {{ end }}
   {{- end -}}
+
 </head>

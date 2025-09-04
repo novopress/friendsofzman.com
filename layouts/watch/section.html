@@ -1,34 +1,10 @@
 {{ define "main" }}
   <h2>Watch</h2>
   <div id="columns">
-    <nav>
-      <h3>AmRen 2022</h3>
-      <ul>
-        <li><a href="#AmRen_ChristopherZeeman_ZMan_WhatIsToBeDone_2022_2025-07-02.mp4">What Is to Be Done?</a></li>
-      </ul>
-      <h3>RamZPaul Show</h3>
-      <ul>
-        <li><a href="#RamZPaul_2025-02-19_PastWeek_ZMan.mp4">Past Week</a></li>
-        <li><a href="#RamZPaul_2025-02-26_OnNixonAndTrump_ZMan.mp4">Nixon</a></li>
-        <li><a href="#RamZPaul_2025-03-05-OnCommunism_ZMan.mp4">Communism</a></li>
-        <li><a href="#RamZPaul_2025-03-12_OnReagan_ZMan.mp4">Reagan</a></li>
-        <li><a href="#RamZPaul_2025-03-19_UranusAndOtherHeavenlyBodies_ZMan.mp4">Uranus</a></li>
-        <li><a href="#RamZPaul_2025-04-02_DiscussAI_ZMan.mp4">A.I.</a></li>
-        <li><a href="#RamZPaul_2025-04-09_OnGlobalization_ZMan.mp4">Globalization</a></li>
-        <li><a href="#RamZPaul_2025-04-16_OnChristianityInAmerica_ZMan.mp4">Christianity</a></li>
-        <li><a href="#RamZPaul_2025-04-23_DiscussingWomen_ZMan.mp4">Women</a></li>
-        <li><a href="#RamZPaul_2025-04-30_MenUnderSiege_ZMan.mp4">Men Under Siege</a></li>
-        <li><a href="#RamZPaul_2025-05-07_BattleOfShiloh_ZMan.mp4">Battle of Shiloh</a></li>
-        <li><a href="#RamZPaul_2025-05-14_HeartOfDarkness_ZMan.mp4">Heart of Darkness</a></li>
-        <li><a href="#RamZPaul_2025-05-21_GenerationGap_ZMan.mp4">Generation Gap</a></li>
-        <li><a href="#RamZPaul_2025-05-28_GreatPanicOf2020_ZMan.mp4">Covid</a></li>
-        <li><a href="#RamZPaul_2025-06-04_PowerOfNarratives_ZMan.mp4">Narratives</a></li>
-        <li><a href="#RamZPaul_2025-06-11_SummerOfLovePt2_ZMan.mp4">L.A. Riots</a></li>
-        <li><a href="#RamZPaul_2025-06-25_UnderstandingIranAndIslam_ZMan.mp4">Iran & Islam</a></li>
-      </ul>
-    </nav>
+    {{ partial "nav-watch.html" }}
     <main>
       {{ .Content }}
     </main>
   </div>
+{{ partial "back-to-top.html" }}
 {{ end }}
