@@ -7,7 +7,7 @@
     <main>
       {{ .Content }}
       {{ $articles := where .Site.RegularPages "Section" "read" }}
-      <!--
+      {{ $articles := where (where .Site.RegularPages "Section" "read") "Params.excludeFromList" "ne" true }}
       {{ range $articles.GroupByDate "January 2006" }}
       <div>
           <h2>{{ .Key }}</h2>
@@ -19,7 +19,6 @@
           </p>
       </div>
       {{ end }}
-      -->
     </main>
   </div>
 {{ partial "back-to-top.html" }}

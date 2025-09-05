@@ -8,4 +8,7 @@ date: 2025-07-27
 
 You can also select a *Category* from the navigation menu on the left (or above, on mobile). There you'll also find **Z Man**'s *Theory of Everything* and *Essential Knowledge* series.
 
-Note: Premium (paywalled) articles and user comments are not (yet) available at this time.
+{{< button
+    url="/read#read-nav"
+    title="View Categories"
+>}}
