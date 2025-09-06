@@ -1,7 +1,7 @@
 ---
 title: Listen
 date: 2025-07-25
-type: listen
+layout: listen
 ---
 
 ## Z Blog Power Hour
@@ -12,7 +12,7 @@ To my knowledge, there was never a guest. It was just **Z Man** reflecting on th
 
 About half the episodes are topical to the week, and the other half are perennial. But they were always thoughtful, sober, and cut through the sensationalism and spectacle of the daily news cycle.
 
-[**All *Z Blog Power Hour* Episodes**](/listen/podcast)
+**All *Z Blog Power Hour* Episodes** - Coming soon
 
 ![Video 1](/200x150.png "Video 1")
 ![Video 1](/200x150.png "Video 1")
@@ -26,7 +26,7 @@ These episodes were more conversational and personal: discussing his move from "
 
 He described these episodes as "[Behind the Green Door](/listen/premium)," and after revealing his face in 2025, started filming short (10-minute) video segments for them as well.
 
-[**All *Behind The Green Door* Episodes**](/listen/premium)
+**All *Behind The Green Door* Episodes** - Coming soon
 
 ![Video 1](/200x150.png "Video 1")
 ![Video 1](/200x150.png "Video 1")

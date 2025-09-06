@@ -1,0 +1,25 @@
+{{ define "main" }}
+  <h2>Read: Taki Magazine</h2>
+  <div id="columns">
+    <nav id="read-nav">
+      {{ partial "nav-read.html" . }}
+    </nav>
+    <main>
+      {{ .Content }}
+      {{ $articles := where (where .Site.RegularPages "Params.publisher" "Taki") "Params.excludeFromList" "ne" true }}
+      {{ $articles := where .Site.RegularPages "Params.publisher" "Taki" }}
+      {{ range $articles.GroupByDate "2006" }}
+      <div>
+          <h2>{{ .Key }}</h2>
+          <ul>
+              {{ $len := len .Pages }}
+              {{- range $index, $page := .Pages -}}
+              <li><a href="{{ $page.Permalink }}">{{ $page.Title }}</a></li>
+              {{- end -}}
+          </ul>
+      </div>
+      {{ end }}
+    </main>
+  </div>
+{{ partial "back-to-top.html" }}
+{{ end }}

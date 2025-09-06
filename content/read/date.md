@@ -5,4 +5,4 @@ layout: date
 excludeFromList: true
 ---
 
-abc
+This page is the master index for **Z Man**'s articles. It contains everything archived, sorted in reverse chronological order.

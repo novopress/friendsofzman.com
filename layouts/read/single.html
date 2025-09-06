@@ -81,6 +81,7 @@
               <p>To keep <a href="/about" title="About"><strong>Z Man's</strong></a> voice alive for future generations, we’ve archived his writings from the original site at <em>thezman.com.</em> We’ve edited out ancillary links, advertisements, and donation requests to focus on his written content.</p>
             </div>
           </section>
+          {{ if and (isset .Params "original_url") (in .Params.original_url "thezman") }}
           <aside>
             {{ partial "read-comments-meta.html" . }}
           </aside>
@@ -91,7 +92,7 @@
           {{ partial "read-comments.html" . }}
         </div>
       </div>
-
+      {{ end }}
     </div>
 
   </article>
